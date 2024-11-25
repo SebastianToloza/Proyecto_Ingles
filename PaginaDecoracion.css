@@ -1,0 +1,213 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+
+    background: snow;
+    position: relative;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url("Fondo.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: 40%;
+    opacity: 0.4;
+    z-index: -1;
+}
+
+
+
+/* From Uiverse.io by boryanakrasteva */
+.btn {
+    width: 30px;
+    height: 50px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    border: none;
+    outline: 2px solid rgb(105, 127, 255);
+    box-shadow: 0px 0px 10px rgb(105, 127, 255);
+    position: relative;
+  }
+
+.header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+.header p{
+    position: relative;
+    bottom: 70px;
+}
+#titulo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+#titulo img{
+    width: 20%;
+    display: flex;
+    align-self: center;
+}
+#titulo h1{
+    position: relative;
+    top: 50px;
+}
+.nav {
+    background-color: #444;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+.nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+#ZonaBusqueda{
+    margin-top: 1%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.nav input{
+    color: white;
+    border: 2px solid #8707ff;
+    border-radius: 40px 0px 0px 40px;
+    padding: 10px 25px;
+    width:500px;
+    background: transparent;
+    max-width: 190px;
+
+}
+.input:focus {
+    box-shadow: 2px 2px 15px #8707ff inset;
+  }
+
+.Btn-Container {
+    display: flex;
+    width: 170px;
+    height: fit-content;
+    background-color: #1d2129;
+    border-radius:  0px 40px 40px 0px;
+    box-shadow: 0px 5px 10px #bebebe;
+    justify-content: space-between;
+    align-items: center;
+    border: none;
+    cursor: pointer;
+  }
+  .icon-Container {
+    width: 45px;
+    height: 45px;
+    background-color: #f59aff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 3px solid #1d2129;
+  }
+  .text {
+    width: calc(170px - 45px);
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.1em;
+    letter-spacing: 1.2px;
+  }
+  .icon-Container svg {
+    transition-duration: 1.5s;
+  }
+  .Btn-Container:hover .icon-Container svg {
+    transition-duration: 1.5s;
+    animation: arrow 1s linear infinite;
+  }
+  @keyframes arrow {
+    0% {
+      opacity: 0;
+      margin-left: 0px;
+    }
+    100% {
+      opacity: 1;
+      margin-left: 10px;
+    }
+  }
+.content {
+    padding: 20px;
+}
+.footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 40px 0;
+    position: relative;
+}
+.footer .social-links {
+    margin: 20px 0;
+}
+.footer .social-links a {
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 20px;
+}
+.footer .social-links a:hover {
+    color: #ff6347;
+}
+.footer .newsletter {
+    margin: 20px 0;
+}
+.footer .newsletter input[type="email"] {
+    padding: 10px;
+    width: 250px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 4px;
+}
+.footer .newsletter button {
+    padding: 10px 20px;
+    background-color: #ff6347;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.footer .newsletter button:hover {
+    background-color: #ff4500;
+}
+img {
+    width: 70%;
+    height: 70%;
+    margin: 20px 0;
+
+}
+.section {
+    margin-bottom: 30px;
+}
+.section h2 {
+    color: #333;
+}
+.section p {
+    line-height: 1.6;
+}
+.section ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+.section ul li {
+    margin: 10px 0;
+}
