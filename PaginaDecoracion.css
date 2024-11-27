@@ -95,7 +95,7 @@ body::before {
 }
 .input:focus {
     box-shadow: 2px 2px 15px #8707ff inset;
-  }
+}
 
 .Btn-Container {
     display: flex;
@@ -108,8 +108,12 @@ body::before {
     align-items: center;
     border: none;
     cursor: pointer;
-  }
-  .icon-Container {
+}
+.section img{
+    display: flex;
+    justify-self: center;
+}
+.icon-Container {
     width: 45px;
     height: 45px;
     background-color: #f59aff;
@@ -118,8 +122,8 @@ body::before {
     justify-content: center;
     border-radius: 50%;
     border: 3px solid #1d2129;
-  }
-  .text {
+}
+.text {
     width: calc(170px - 45px);
     height: 100%;
     display: flex;
@@ -128,26 +132,38 @@ body::before {
     color: white;
     font-size: 1.1em;
     letter-spacing: 1.2px;
-  }
-  .icon-Container svg {
+}
+.icon-Container svg {
     transition-duration: 1.5s;
-  }
-  .Btn-Container:hover .icon-Container svg {
+}
+.Btn-Container:hover .icon-Container svg {
     transition-duration: 1.5s;
     animation: arrow 1s linear infinite;
-  }
-  @keyframes arrow {
+}
+@keyframes arrow {
     0% {
-      opacity: 0;
-      margin-left: 0px;
+        opacity: 0;
+        margin-left: 0px;
     }
     100% {
-      opacity: 1;
-      margin-left: 10px;
+        opacity: 1;
+        margin-left: 10px;
     }
-  }
+}
 .content {
     padding: 20px;
+}
+.content table{
+    background-color: #d8d8d8;
+}
+table th{
+
+    background-color: #9f9d9d;
+}
+table td{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 10px;
 }
 .footer {
     background-color: #222;
