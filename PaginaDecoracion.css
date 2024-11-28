@@ -121,6 +121,8 @@ iframe{
 .section img{
     display: flex;
     justify-self: center;
+    width: 50%;
+    height: 50%;
 }
 .icon-Container {
     width: 45px;
